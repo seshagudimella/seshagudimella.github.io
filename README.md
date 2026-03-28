@@ -11,8 +11,8 @@ A personal thought leadership and portfolio website for **Sesha Gudimella**, Sen
 | Section | Description |
 |---|---|
 | **Hero** | Positioning headline, key metrics, and cloud infrastructure topology diagram |
-| **Impact** | Three narrative case studies with data visualizations |
-| **Stack** | Tech stack grid by category + platform ownership map diagram |
+| **Impact** | Four narrative case studies with data visualizations |
+| **Stack** | Tech stack grid by category (incl. Data & Analytics) + platform ownership map diagram |
 | **Writing** | Links to published work on the Sonos Tech Blog and Datadog's case study library |
 | **Principles** | Five core beliefs about platform engineering and cloud culture |
 | **Projects** | Open work — scripts, dashboards, and tooling |
@@ -22,6 +22,7 @@ A personal thought leadership and portfolio website for **Sesha Gudimella**, Sen
 1. **$100K/month AWS cost reduction** — rightsizing, Spot Fleet, Reserved Instances, Savings Plans
 2. **~50% EKS CI cost reduction** — Datadog CI Pipeline Visibility, Jenkins, SLOs
 3. **Observability consolidation** — AWS Cost Explorer → nOps → Datadog (single ecosystem)
+4. **Incident & Postmortem Framework** — 35% fewer repeat incidents, 25% MTTR improvement (Datadog, Snowflake, Tableau)
 
 ---
 
@@ -29,8 +30,9 @@ A personal thought leadership and portfolio website for **Sesha Gudimella**, Sen
 
 ```
 portfolio-site/
-├── index.html    ← HTML markup only (structure and content)
+├── index.html    ← HTML markup only (structure, text, section layout)
 ├── styles.css    ← All visual styling and responsive layout
+├── diagrams.js   ← All SVG diagrams (injected into placeholder divs on load)
 ├── script.js     ← All interactivity (animations, scroll behaviour, visitor counter)
 └── README.md     ← This file
 ```
@@ -39,22 +41,23 @@ portfolio-site/
 
 | File | Role | What to edit here |
 |---|---|---|
-| `index.html` | Structure & content | Text, sections, SVG diagrams, nav links |
+| `index.html` | Structure & content | Text, sections, nav links, section order |
 | `styles.css` | Visual design | Colors, fonts, spacing, layout, responsive breakpoints |
+| `diagrams.js` | Data visualizations | Bar chart, CI pipeline, incident metrics, platform map, all SVG visuals |
 | `script.js` | Behaviour | Counter animations, scroll effects, GoatCounter integration |
 
 ---
 
 ## How to open locally
 
-Double-click `index.html` — it opens in any browser with no server needed. All three files must stay in the same folder for the styles and scripts to load correctly.
+Double-click `index.html` — it opens in any browser with no server needed. All four files must stay in the same folder for styles, diagrams, and scripts to load correctly.
 
 ---
 
 ## How to publish
 
 ### GitHub Pages
-1. Upload all three files (`index.html`, `styles.css`, `script.js`) to the root of the `seshagudimella.github.io` repo
+1. Upload all four files (`index.html`, `styles.css`, `diagrams.js`, `script.js`) to the root of the `seshagudimella.github.io` repo
 2. Go to **Settings → Pages → Deploy from branch (main)**
 3. Your site goes live at `https://seshagudimella.github.io`
 
@@ -67,7 +70,7 @@ Domains cost ~$10–15/year on [Namecheap](https://namecheap.com) or [Google Dom
 ## Customisation notes
 
 - **To update text:** open `index.html` in any text editor and find the section you want to change
-- **To update the bar chart:** search for `ic-visual-pane` inside Card 1 in `index.html` and edit the SVG rect values
+- **To update a diagram:** open `diagrams.js` and find the relevant entry (e.g. `costChart` for the bar chart, `incidentFramework` for the incident metrics, `platformMap` for the ownership map) and edit the SVG values
 - **To change colours or fonts:** open `styles.css` and edit the CSS variables inside `:root { ... }` at the top
 - **To add a new section:** duplicate an existing `<section>` block in `index.html` and update the content
 - **To add new behaviour:** add JavaScript to `script.js`

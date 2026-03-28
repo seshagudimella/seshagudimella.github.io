@@ -125,6 +125,7 @@ h2.section-heading { font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 800; 
 .card-c1::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #10b981, #059669); }
 .card-c2::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #6366f1, #4f46e5); }
 .card-c3::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #7c3aed, #6366f1); }
+.card-c4::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #f59e0b, #d97706); }
 
 .ic-header { margin-bottom: 1.5rem; }
 .ic-index { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem; }
