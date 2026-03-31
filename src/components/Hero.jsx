@@ -30,7 +30,7 @@ export default function Hero() {
   return (
     <section id="hero">
       <div className="hero-text">
-        <div className="eyebrow-pill">Cloud &amp; Platform Engineering Leader</div>
+        <div className="eyebrow-pill">Cloud Platform &amp; Engineering Leader</div>
         <h1 className="hero-headline">
           I build systems that<br />scale <span className="gradient-text">teams,</span><br />not just infrastructure.
         </h1>
