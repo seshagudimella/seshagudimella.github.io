@@ -22,16 +22,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: portfolio-react
 
       - name: Build
         run: npm run build
-        working-directory: portfolio-react
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./portfolio-react/dist
+          publish_dir: ./dist
           publish_branch: gh-pages
           force_orphan: true
