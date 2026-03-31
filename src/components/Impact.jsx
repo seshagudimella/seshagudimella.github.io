@@ -36,7 +36,7 @@ export default function Impact() {
       <div className="section-kicker">Impact</div>
       <h2 className="section-heading">Work that moved the needle</h2>
       <p className="section-lead">
-        Four stories that define how I approach platform engineering — with urgency, precision, and long-term thinking.
+        Five stories that define how I approach platform engineering — with urgency, precision, and long-term thinking.
       </p>
       <div className="impact-stack">
 
@@ -98,6 +98,21 @@ export default function Impact() {
           <p>Incidents were being resolved but not learned from. Root-cause analysis was inconsistent, action items fell through the cracks, and the same failure modes kept resurfacing across quarters — draining engineering time and eroding SLO budgets.</p>
           <p>I built a structured <strong>incident and postmortem framework</strong> — standardizing severity classification, blameless RCA processes, and systematic tracking of corrective actions through <strong>Datadog, Snowflake, and Tableau dashboards</strong>. Every postmortem became a closed loop with measurable follow-through.</p>
           <p>The result: <strong>35% reduction in repeat incidents</strong> and a <strong>25% improvement in mean time to recover (MTTR)</strong> — turning postmortems from a compliance exercise into a genuine reliability engine.</p>
+        </ImpactCard>
+
+        <ImpactCard
+          colorClass="card-c5"
+          indexLabel="05 — AI & Intelligent Operations"
+          title="From Reactive Alerts to AI-Driven Insight: Watchdog, Anomaly Detection & ML Infra"
+          stat={`Reactive<br><span class="arrow">→ Proactive</span>`}
+          statSub=""
+          statClass="muted"
+          diagram={DIAGRAMS.aiPlatform}
+          tags={['Datadog Watchdog', 'AI/ML', 'Anomaly Detection', 'Forecasting', 'SageMaker', 'EKS', 'GPU Nodes', 'MLOps']}
+        >
+          <p>Alert fatigue was real: static thresholds fired constantly, on-call engineers spent hours triaging noise, and actual anomalies were buried under false positives. Meanwhile, growing demand for ML workloads meant we needed GPU-capable infrastructure that didn't exist in our platform.</p>
+          <p>I led the adoption of <strong>Datadog Watchdog AI</strong> — enabling anomaly detection, forecasting, and automated root-cause analysis across our observability stack. Static threshold alerts gave way to adaptive signals grounded in real workload baselines, dramatically reducing noise and accelerating MTTD.</p>
+          <p>In parallel, I architected <strong>ML infrastructure on EKS</strong> — integrating GPU node pools and <strong>AWS SageMaker</strong> to support model training and inference workloads. The result: a platform that doesn't just monitor intelligently — it provides the compute foundation for the AI-driven products Sonos is building next.</p>
         </ImpactCard>
 
       </div>

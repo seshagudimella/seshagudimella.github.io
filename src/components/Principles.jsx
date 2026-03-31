@@ -38,7 +38,14 @@ const PRINCIPLES = [
     iconStroke: '#0284c7',
     title: 'Shift left on everything.',
     body: 'Performance, cost, reliability — these shouldn\'t be discovered in production. The platform team\'s job is to move feedback as close to the code commit as possible, so engineers get the right signal at the moment they can still act on it.',
-    wide: true,
+  },
+  {
+    num: '06',
+    iconClass: 'p-icon-6',
+    iconPath: '<circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>',
+    iconStroke: '#06b6d4',
+    title: 'AI is infrastructure, not a feature.',
+    body: 'Treating AI capabilities as bolt-on additions is the wrong model. Intelligent alerting, anomaly detection, and ML workloads need to be first-class citizens of the platform — built on the same observability, reliability, and cost guardrails as everything else.',
   },
 ]
 

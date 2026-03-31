@@ -140,6 +140,39 @@ const DIAGRAMS = {
       <text x="130" y="165" text-anchor="middle" font-size="9.5" font-weight="700" fill="#4f46e5">Datadog · Snowflake · Tableau</text>
     </svg>`,
 
+  /* Impact card 5 — AI-powered observability + ML platform infra */
+  aiPlatform: `
+    <svg viewBox="0 0 260 210" width="100%" style="font-family:Inter,sans-serif;overflow:visible;">
+      <text x="130" y="14" text-anchor="middle" font-size="8" font-weight="700" fill="#9ca3af" letter-spacing="0.08em">BEFORE</text>
+      <rect x="10"  y="22" width="68" height="28" rx="5" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+      <text x="44"  y="36" text-anchor="middle" font-size="7.5" font-weight="600" fill="#dc2626">Static</text>
+      <text x="44"  y="46" text-anchor="middle" font-size="7"   fill="#ef4444">Thresholds</text>
+      <rect x="96"  y="22" width="68" height="28" rx="5" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+      <text x="130" y="36" text-anchor="middle" font-size="7.5" font-weight="600" fill="#dc2626">Alert</text>
+      <text x="130" y="46" text-anchor="middle" font-size="7"   fill="#ef4444">Storms</text>
+      <rect x="182" y="22" width="68" height="28" rx="5" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+      <text x="216" y="36" text-anchor="middle" font-size="7.5" font-weight="600" fill="#dc2626">Reactive</text>
+      <text x="216" y="46" text-anchor="middle" font-size="7"   fill="#ef4444">Response</text>
+      <line x1="130" y1="50" x2="130" y2="64" stroke="#fca5a5" stroke-width="1.5"/>
+      <polygon points="125,61 135,61 130,68" fill="#fca5a5"/>
+      <rect x="60" y="68" width="140" height="28" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+      <text x="130" y="80" text-anchor="middle" font-size="8" font-weight="700" fill="#dc2626">Manual triage</text>
+      <text x="130" y="90" text-anchor="middle" font-size="7"   fill="#ef4444">high noise · slow MTTD</text>
+      <line x1="20" y1="110" x2="240" y2="110" stroke="rgba(0,0,0,0.07)" stroke-width="1" stroke-dasharray="3,3"/>
+      <text x="130" y="123" text-anchor="middle" font-size="8" font-weight="700" fill="#059669" letter-spacing="0.08em">AFTER</text>
+      <rect x="50" y="130" width="160" height="34" rx="8" fill="#ecfeff" stroke="#06b6d4" stroke-width="1.5"/>
+      <text x="130" y="144" text-anchor="middle" font-size="9" font-weight="800" fill="#0284c7">Datadog Watchdog AI</text>
+      <text x="130" y="157" text-anchor="middle" font-size="7"   fill="#0891b2">Anomaly detection · Forecasting · RCA</text>
+      <line x1="95"  y1="164" x2="68"  y2="178" stroke="#6ee7b7" stroke-width="1.5"/>
+      <line x1="165" y1="164" x2="192" y2="178" stroke="#6ee7b7" stroke-width="1.5"/>
+      <rect x="10"  y="178" width="112" height="28" rx="6" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+      <text x="66"  y="190" text-anchor="middle" font-size="7.5" font-weight="600" fill="#059669">Proactive alerts</text>
+      <text x="66"  y="200" text-anchor="middle" font-size="7"   fill="#10b981">signal over noise</text>
+      <rect x="138" y="178" width="112" height="28" rx="6" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1.5"/>
+      <text x="194" y="190" text-anchor="middle" font-size="7.5" font-weight="600" fill="#059669">ML infra on EKS</text>
+      <text x="194" y="200" text-anchor="middle" font-size="7"   fill="#10b981">SageMaker · GPU nodes</text>
+    </svg>`,
+
   platformMap: `
     <svg viewBox="0 0 720 215" width="100%" style="min-width:540px;font-family:Inter,sans-serif;display:block;">
       <rect x="8"   y="8"   width="218" height="198" rx="14" fill="rgba(245,158,11,0.05)"  stroke="rgba(245,158,11,0.25)"  stroke-width="1.5" stroke-dasharray="5,4"/>

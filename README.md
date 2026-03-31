@@ -11,10 +11,10 @@ A personal thought leadership and portfolio website for **Sesha Gudimella**, Sen
 | Section | Description |
 |---|---|
 | **Hero** | Positioning headline, key metrics, and cloud infrastructure topology diagram |
-| **Impact** | Four narrative case studies with data visualizations |
+| **Impact** | Five narrative case studies with data visualizations |
 | **Stack** | Tech stack grid by category (incl. Data & Analytics) + platform ownership map diagram |
 | **Writing** | Links to published work on the Sonos Tech Blog and Datadog's case study library |
-| **Principles** | Five core beliefs about platform engineering and cloud culture |
+| **Principles** | Six core beliefs about platform engineering, cloud culture, and AI |
 | **Projects** | Open work — scripts, dashboards, and tooling |
 | **Connect** | LinkedIn link |
 
@@ -23,6 +23,7 @@ A personal thought leadership and portfolio website for **Sesha Gudimella**, Sen
 2. **~50% EKS CI cost reduction** — Datadog CI Pipeline Visibility, Jenkins, SLOs
 3. **Observability consolidation** — AWS Cost Explorer → nOps → Datadog (single ecosystem)
 4. **Incident & Postmortem Framework** — 35% fewer repeat incidents, 25% MTTR improvement (Datadog, Snowflake, Tableau)
+5. **AI & Intelligent Operations** — Datadog Watchdog AI anomaly detection + ML infra on EKS/SageMaker with GPU nodes
 
 ---
 
@@ -43,9 +44,9 @@ A personal thought leadership and portfolio website for **Sesha Gudimella**, Sen
     └── components/
         ├── Nav.jsx             ← Fixed nav with scroll-based active link
         ├── Hero.jsx            ← Hero section with animated counters
-        ├── Impact.jsx          ← Four impact case study cards
+        ├── Impact.jsx          ← Five impact case study cards
         ├── Writing.jsx         ← Published work and recognition
-        ├── Principles.jsx      ← Five engineering principles
+        ├── Principles.jsx      ← Six engineering principles
         ├── Stack.jsx           ← Tech stack grid + platform ownership map
         ├── Projects.jsx        ← Open work and side projects
         ├── Connect.jsx         ← LinkedIn call to action
@@ -80,7 +81,7 @@ No manual steps needed after the initial setup.
 ## Customisation notes
 
 - **To update text or content:** edit the relevant component in `src/components/`
-- **To update a diagram:** open `src/diagrams.js` and find the relevant entry (e.g. `costChart`, `incidentFramework`, `platformMap`) and edit the SVG values
+- **To update a diagram:** open `src/diagrams.js` and find the relevant entry (e.g. `costChart`, `incidentFramework`, `aiPlatform`, `platformMap`) and edit the SVG values
 - **To change colours or fonts:** open `src/styles.css` and edit the CSS variables inside `:root { ... }` at the top
 - **To add a new section:** create a new component in `src/components/`, import it in `src/App.jsx`, and add it to the render output
 
