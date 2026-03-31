@@ -2,7 +2,7 @@
 
 🌐 **Live site: [seshagudimella.github.io](https://seshagudimella.github.io)**
 
-A personal thought leadership and portfolio website for **Sesha Gudimella**, Senior Manager of Cloud & Platform Engineering.
+A personal thought leadership and portfolio website for **Sesha Gudimella**, Cloud Platform & Engineering Leader.
 
 ---
 
